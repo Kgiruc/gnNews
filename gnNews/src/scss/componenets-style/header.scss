@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-light-purple;
+    height: 5dvh;
+
+    h1 {
+        margin-left: 4rem;
+        font-size: $font-head1;
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+nav {
+    margin-right: 4rem;
+}

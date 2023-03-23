@@ -1,6 +1,14 @@
+import { Link } from "react-router-dom"
+
 function Header() {
   return (
-    <div>Header</div>
+    <header>
+      <h1><Link to="/">gnNews</Link></h1>
+      <nav>
+        <button>change view</button>
+        <button>popup</button>
+      </nav>
+    </header>
   )
 }
 

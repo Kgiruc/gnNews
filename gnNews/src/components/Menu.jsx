@@ -1,6 +1,6 @@
 function Menu() {
   return (
-    <div>Menu</div>
+    <aside>Menu boczne</aside>
   )
 }
 
