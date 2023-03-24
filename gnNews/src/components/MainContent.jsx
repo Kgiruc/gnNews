@@ -1,6 +1,6 @@
 function MainContent() {
   return (
-    <div>meincontente</div>
+    <div>wybierz kraj</div>
   )
 }
 
