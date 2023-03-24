@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import Header from "./components/Header"
-import Menu from "./components/Menu"
+import Menu from "./components/Menu/Menu"
 import MainContent from "./components/MainContent"
 import MainNews from "./components/MainNews"
 import Footer from "./components/Footer"
