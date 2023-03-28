@@ -8,19 +8,17 @@ import { useState } from "react"
 
 function App() {
 
-  const [result, setResult] = useState("")
-
   return (
     <div className="App">
       <Header />
       <Menu />
       <main>
         <Routes>
-          <Route path='/' element={<MainContent setResult={setResult}/>} />
-          <Route path='/country/:countryId' element={<MainNews setResult={setResult}/>}/>
+          <Route path='/' element={<MainContent />} />
+          <Route path='/country/:countryId' element={<MainNews/>}/>
         </Routes>
       </main>
-      <Footer result={result}/>
+      <Footer />
     </div>
   )
 }

@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
+import { useSelector } from "react-redux"
 
-function Footer({ result }) {
+function Footer() {
   const [time, setTime] = useState()
+  const result = useSelector(state => state.results.resultsState)
   
   
 
