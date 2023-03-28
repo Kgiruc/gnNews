@@ -4,15 +4,25 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: $color-green;
-    height: 5dvh;
+    height: 8dvh;
+    -webkit-box-shadow: -2px 11px 75px 0px rgba(23, 23, 23, 1);
+    -moz-box-shadow: -2px 11px 75px 0px rgba(23, 23, 23, 1);
+    box-shadow: -2px 11px 75px 0px rgba(23, 23, 23, 1);
 
     h1 {
-        margin-left: 4rem;
+        margin-left: 5rem;
         font-size: $font-head1;
+        font-family: $font-alt;
+        font-weight: 600;
+        color: $color-white;
 
         a {
             text-decoration: none;
             cursor: pointer;
+
+            &:visited {
+                color: $color-white;
+            }
         }
     }
 }
@@ -20,5 +30,23 @@ header {
 
 
 nav {
-    margin-right: 4rem;
+    margin-right: 5rem;
+    display: flex;
+    gap: 2rem;
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        img {
+            width: 2rem;
+            height: 2rem;
+            filter: brightness(0) invert(1);
+
+            &:hover {
+                filter: none;
+            }
+        }
+    }
 }
