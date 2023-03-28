@@ -17,7 +17,7 @@ function Footer() {
   return (
     <footer>
       {result > 0 &&<p>results: {result}</p>}
-      <p>{time}</p>
+      <time>{time}</time>
     </footer>
   )
 }
