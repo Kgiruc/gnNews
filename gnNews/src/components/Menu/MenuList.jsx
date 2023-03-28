@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function MenuList({ countrydata }) {
     return (
-        <div className="country__container">
+        <div className="countries__container">
             {
                 countrydata.map((country) =>
                 <div key={country.cca2} >

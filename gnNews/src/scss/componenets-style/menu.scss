@@ -7,21 +7,25 @@ aside {
     padding: 2rem;    
 }
 
-.country__container {
+.countries__container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    
 }
 
 .country__link {
     display: flex;
-    // padding-left: 2rem;
     gap: 2rem;
     text-decoration: none;
     text-align: center;
     align-items: center;
     color: $color-white;
+    font-family: $font-base;
+    font-size: $font-general;
+    padding: 0.2rem;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+
     
     &:visited {
         color:$color-white;
