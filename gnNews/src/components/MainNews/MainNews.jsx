@@ -32,10 +32,10 @@ function MainNews({ setResult }) {
         <article>
           <h2>{params.countryId}</h2>
           {view ? <ListNews newsall={newsall} /> : <TilesNews newsall={newsall} />}
-          {newsall.totalResults === 0 && <p>no results...</p>}
-          {loadingnews && <p>loadingnews...</p>}
-        </article>
+          {newsall.totalResults === 0 && <p>no results...</p>}  
+        </article>  
       }
+      {loadingnews && <p>loadingnews...</p>}
     </>
   )
 }

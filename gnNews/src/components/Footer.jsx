@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react"
 
-
-
 function Footer({ result }) {
   const [time, setTime] = useState()
   
@@ -16,7 +14,7 @@ function Footer({ result }) {
 
   return (
     <footer>
-      <p>results: {result}</p>
+      {result > 0 &&<p>results: {result}</p>}
       <p>{time}</p>
     </footer>
   )
