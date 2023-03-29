@@ -52,6 +52,10 @@ aside {
     }
 }
 
+.mobile__menu {
+    display: none;
+}
+
 @media (max-width: $breakpoint-tablet) {
     aside {
         max-width: 25dvw;
@@ -79,5 +83,25 @@ aside {
 @media (max-width: $breakpoint-smartphone) {
     aside {
         display: none;
+    }
+
+    .mobile__menu {
+        display: flex;
+        position: absolute;
+        background-color: $color-gray;
+        padding-top: 2.5rem;
+
+        .mobile-nav__img__open {
+            position: fixed;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .mobile-nav__img__close {
+            position: absolute;
+            top: 0;
+            width: 2rem;
+            height: 2rem;
+        }
     }
 }

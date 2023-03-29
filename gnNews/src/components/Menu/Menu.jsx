@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import MenuList from "./MenuList"
+import MobileMenu from "./MobileMenu"
 
 function Menu() {
   const [countrydata, setCountryData] = useState()
@@ -19,10 +20,13 @@ function Menu() {
   }, [])
   
   return (
+    <>
     <aside>
-      {countrydata  && <MenuList countrydata={countrydata}/> }
+      {countrydata  && <MenuList countrydata={countrydata}/>}
       {loading && <p>loading...</p>}
     </aside>
+    {countrydata && <MobileMenu countrydata={countrydata}/>}
+    </>
   )
 }
 
