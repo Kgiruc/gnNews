@@ -34,7 +34,7 @@ function MainNews({ setResult }) {
         <article>
           <h2>{params.countryId}</h2>
           {view ? <ListNews newsall={newsall} /> : <TilesNews newsall={newsall} />}
-          {newsall.totalResults === 0 && <p>no results...</p>}  
+          {newsall.totalResults === 0 && <p className="no_results">no results...</p>}  
         </article>  
       }
       {loadingnews && <p>loadingnews...</p>}
