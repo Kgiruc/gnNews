@@ -12,7 +12,7 @@
         left: 50%;
         min-height: 20vh;
         min-width: 20vw;
-        padding-top: 2rem;
+        padding: 4rem 0;
         max-width: 90%;
         transform: translate(-50%, -50%);
         background-color: $color-gray;
@@ -75,5 +75,12 @@
 @media (max-width: $breakpoint-tablet) {
     .popup__content {
         font-size: $font-general;
+    }
+}
+
+@media (max-width: $breakpoint-smartphone) {
+    .popup__content {
+        min-width: 80vw;
+        height: auto;
     }
 }
