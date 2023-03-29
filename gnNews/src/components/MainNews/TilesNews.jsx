@@ -18,7 +18,7 @@ function TilesNews({ newsall }) {
                         }
                         <h3>{news.title}</h3>
                         <h4>{news.desciption}</h4>
-                        <p>{news.source.name}</p>
+                        <p className="news__source">{news.source.name}</p>
                         <p>{news.publishedAt}</p>
                         <button onClick={() => setOpen(news.url)}>
                             <img src={read_more} alt="read more"/>

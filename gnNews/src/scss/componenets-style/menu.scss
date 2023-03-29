@@ -6,6 +6,16 @@ aside {
     overflow: auto;
     padding: 1rem 0 0 2rem;
     z-index: -10;    
+
+    &::-webkit-scrollbar-track {
+        background-color: $color-gray;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 20px;
+        border: 1px solid $color-blank-white;
+    }
 }
 
 .countries__container {

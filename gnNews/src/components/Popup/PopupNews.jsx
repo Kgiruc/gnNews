@@ -5,13 +5,17 @@ function PopupNews({ newscontent, newsauthor, newsurl, setOpen }) {
         <div className="popup__background">
             <div className="popup__container">
                 <button onClick={() => setOpen()}>
-                    <img src={close_img} alt="close"/>
+                    <img src={close_img} alt="close" />
                 </button>
-                <p>{newscontent}</p>
-                <p>{newsauthor}</p>
-                <a href={newsurl}>url</a>
+                {newscontent ?
+                    <p className="popup__content">{newscontent}</p>
+                    :
+                    <p className="popup__content">none</p>
+                }
+                <p className="popup__author">author:{newsauthor}</p>
+                <a href={newsurl} target="_blank">:link do artykułu</a>
             </div>
-        </div>
+        </div >
     )
 }
 

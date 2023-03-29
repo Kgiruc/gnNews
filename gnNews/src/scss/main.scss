@@ -7,6 +7,16 @@
 @import "./componenets-style/news.scss";
 @import "./componenets-style/popup.scss";
 
-.App {
-    max-height: 100dvh;
+//scrollbar custom
+::-webkit-scrollbar {
+    width: 0.6vw;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $color-blank-green;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $color-gray;
+    border-radius: 20px;
 }
