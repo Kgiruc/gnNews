@@ -18,7 +18,7 @@ article {
     &::-webkit-scrollbar-track {
         background-color: $color-white;
     }
-    
+
     &::-webkit-scrollbar-thumb {
         background-color: transparent;
         border-radius: 20px;
@@ -105,4 +105,66 @@ section img {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    h2 {
+        padding-top: 1rem;
+    }
+
+    article {
+        margin: 0.2rem 0.2rem 0 0.2rem;
+    }
+
+    section {
+        padding: 0.2rem;
+        flex-direction: row;
+        align-items: center;
+
+        h3 {
+            font-size: $font-subhead2;
+        }
+
+        p {
+            font-size: calc($font-typical - 5px);
+        }
+
+
+    }
+
+    .tile__container__solo {
+
+        h3 {
+            font-size: $font-subhead2;
+        }
+
+        img {
+            width: 7rem;
+            height: 7rem;
+            border-radius: 10px;
+        }
+
+        button img {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 0;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-smartphone) {
+    main {
+        margin-bottom: 1rem;
+    }
+
+    section {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    section h3 {
+        max-width: 85dvw;
+        text-align: center;
+    }
 }

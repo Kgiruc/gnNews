@@ -1,16 +1,16 @@
 aside {
     float: left;
     max-height: 100dvh;
-    max-width: 30%;
+    max-width: 30dvw;
     background-color: $color-gray;
     overflow: auto;
     padding: 1rem 0 0 2rem;
-    z-index: -10;    
+    z-index: -10;
 
     &::-webkit-scrollbar-track {
         background-color: $color-gray;
     }
-    
+
     &::-webkit-scrollbar-thumb {
         background-color: transparent;
         border-radius: 20px;
@@ -37,17 +37,47 @@ aside {
     border: 0.5px solid transparent;
     border-radius: 10px;
 
-    
+
     &:visited {
-        color:$color-white;
+        color: $color-white;
     }
 
     &:hover {
         background-color: $color-green;
     }
 
-    img{
+    img {
         width: 2rem;
         height: 1.5rem;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    aside {
+        max-width: 25dvw;
+        padding: 0.5rem 0 0 1rem;
+    }
+
+    .countries__container {
+        gap: 0.7rem;
+    }
+
+    .country__link {
+        font-size: $font-typical;
+
+        p {
+            width: 100%;
+        }
+
+        img {
+            width: 1.7rem;
+            height: 1.2rem;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-smartphone) {
+    aside {
+        display: none;
     }
 }

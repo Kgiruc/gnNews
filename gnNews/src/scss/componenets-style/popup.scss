@@ -71,3 +71,9 @@
         margin: 0 6px 0 0;
     }
 }
+
+@media (max-width: $breakpoint-tablet) {
+    .popup__content {
+        font-size: $font-general;
+    }
+}

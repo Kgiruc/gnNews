@@ -27,8 +27,6 @@ header {
     }
 }
 
-
-
 nav {
     margin-right: 5rem;
     display: flex;
@@ -47,6 +45,43 @@ nav {
             &:hover {
                 filter: none;
             }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    header {
+        height: 6vh;
+
+        h1 {
+            margin-left: 2.5rem;
+        }
+    }
+
+    nav {
+        margin-right: 2.5rem;
+        gap: 1rem;
+
+         button:hover {
+            filter: brightness(0) invert(1);
+        }
+    
+}
+}
+
+@media (max-width: $breakpoint-smartphone) {
+    header h1 {
+        font-size: $font-subhead1;
+        margin-left: 1.5rem;
+    }
+
+    nav {
+        margin-right: 1.2rem;
+        gap: 0.5rem;
+
+        button img {
+            width: 1.5rem;
+            height: 1.5rem;
         }
     }
 }
