@@ -13,7 +13,7 @@ function PopupNews({ newscontent, newsauthor, newsurl, setOpen }) {
                     <p className="popup__content">none</p>
                 }
                 <p className="popup__author">author:{newsauthor}</p>
-                <a href={newsurl} target="_blank">:link do artykułu</a>
+                <a href={newsurl} target="_blank" rel="noreferrer">:link do artykułu</a>
             </div>
         </div >
     )
