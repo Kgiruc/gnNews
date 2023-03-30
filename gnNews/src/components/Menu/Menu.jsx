@@ -22,10 +22,10 @@ function Menu() {
   return (
     <>
     <aside>
-      {countrydata  && <MenuList countrydata={countrydata}/>}
+      {countrydata  && <MenuList countrydata={countrydata} data-testid="menu-list"/>}
       {loading && <p>loading...</p>}
     </aside>
-    {countrydata && <MobileMenu countrydata={countrydata}/>}
+      {countrydata && <MobileMenu countrydata={countrydata} data-testid="menu-mobile-list"/>}
     </>
   )
 }

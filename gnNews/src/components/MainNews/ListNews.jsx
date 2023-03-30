@@ -13,7 +13,7 @@ function ListNews({ newsall }) {
                         <h3>{news.title}</h3>
                         <p className="news__source">{news.source.name}</p>
                         <p>{moment(news.publishedAt).format("D MMMM YYYY, HH:mm")}</p>
-                        <button onClick={() => setOpen(news.url)}>
+                        <button onClick={() => setOpen(news.url)} aria-label="read more">
                             <img src={read_more} alt="read more"/>
                         </button>
                         {open === news.url && <PopupNews
