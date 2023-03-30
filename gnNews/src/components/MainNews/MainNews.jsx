@@ -9,7 +9,7 @@ function MainNews({ setResult }) {
   const params = useParams()
   const location = useLocation()
   const view = useSelector((state) => state.view.viewState)
-  const dispath = useDispatch()
+  const dispatch = useDispatch()
 
   const [newsall, setNewsAll] = useState([{}])
   const [loadingnews, setLoadingNews] = useState(true)
@@ -23,7 +23,7 @@ function MainNews({ setResult }) {
         setNewsAll(data)
         console.log(data)
         setLoadingNews(false)
-        dispath(changeResults(data.totalResults))
+        dispatch(changeResults(data.totalResults))
       })
   }, [location])
 

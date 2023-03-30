@@ -1,0 +1,11 @@
+.main__content {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 1rem 5rem;
+    width: auto;
+    font-family: $font-alt;
+    background-color: $color-blank-white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }

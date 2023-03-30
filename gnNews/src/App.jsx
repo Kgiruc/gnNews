@@ -4,7 +4,6 @@ import Menu from "./components/Menu/Menu"
 import MainContent from "./components/MainContent"
 import MainNews from "./components/MainNews/MainNews"
 import Footer from "./components/Footer"
-import { useState } from "react"
 
 function App() {
 

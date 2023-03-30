@@ -1,13 +1,18 @@
+import { useEffect } from "react";
 import { useDispatch } from "react-redux"
 import { changeResults } from "../app/features/resultsSlice"
 
 function MainContent() {
-  const dispath = useDispatch()
+  const dispatch = useDispatch()
 
-  dispath(changeResults(0))
+  useEffect(() => {
+    dispatch(changeResults(0));
+  }, []);
+
+  dispatch(changeResults(0))
 
   return (
-    <div>wybierz kraj</div>
+    <div className="main__content">wybierz kraj</div>
   )
 }
 

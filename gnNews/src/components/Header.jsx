@@ -7,14 +7,14 @@ import list from "../assets/icons/list.png"
 import tile from "../assets/icons/tile.png"
 
 function Header() {
-  const dispath = useDispatch()
+  const dispatch = useDispatch()
   const view = useSelector((state) => state.view.viewState)
 
   return (
     <header>
       <h1><Link to="/">gnNews</Link></h1>
       <nav>
-        <button onClick={() => dispath(changeView())}>
+        <button onClick={() => dispatch(changeView())} data-testid="change-view-button">
           {view ? <img src={tile} alt="tile" /> : <img src={list} alt="list" />}
         </button>
         <button><img src={popup} alt="pop up"/></button>
