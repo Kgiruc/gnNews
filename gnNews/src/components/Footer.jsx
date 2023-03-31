@@ -8,10 +8,11 @@ function Footer() {
   
 
   useEffect(() => {
-    setInterval(() => {
+    const intervalId = setInterval(() => {
       const date = new Date()
       setCurrentTime(date.toLocaleTimeString("pl-PL"))
     }, 1000)
+    return () => clearInterval(intervalId)
   },[])
 
   return (

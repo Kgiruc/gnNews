@@ -21,10 +21,10 @@ function MainNews({ setResult }) {
       .then(res => res.json())
       .then(data => {
         setNewsAll(data)
-        console.log(data)
         setLoadingNews(false)
         dispatch(changeResults(data.totalResults))
       })
+      .catch(err => alert(err))
   }, [location])
 
   return (

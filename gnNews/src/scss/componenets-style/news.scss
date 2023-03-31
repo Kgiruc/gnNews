@@ -118,7 +118,7 @@ section img {
     }
 
     section {
-        padding: 0.2rem;
+        padding: 1rem 0.2rem;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
@@ -127,6 +127,12 @@ section img {
             font-size: $font-subhead2;
             max-width: 80dvw;
         }
+
+        h4 {
+            max-width: 80dvw;
+        }
+
+
 
         p {
             font-size: calc($font-typical - 5px);

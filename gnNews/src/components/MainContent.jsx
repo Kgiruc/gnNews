@@ -9,8 +9,6 @@ function MainContent() {
     dispatch(changeResults(0));
   }, []);
 
-  dispatch(changeResults(0))
-
   return (
     <div className="main__content">wybierz kraj</div>
   )

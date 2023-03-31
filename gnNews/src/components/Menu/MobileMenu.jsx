@@ -20,7 +20,7 @@ function MobileMenu({ countrydata }) {
     return (
         <div className='mobile__menu'>
             {open ? closeIcon : openIcon}
-            {open && <MenuList countrydata={countrydata}/>}
+            {open && <MenuList  countrydata={countrydata}/>}
         </div>
     )
 }

@@ -2,9 +2,9 @@ import { Link } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { useSelector } from "react-redux"
 import { changeView } from "../app/features/viewSlice"
-import popup from "../assets/icons/pop-up.png"
 import list from "../assets/icons/list.png"
 import tile from "../assets/icons/tile.png"
+import PopupHeader from "./Popup/PopupHeader"
 
 function Header() {
   const dispatch = useDispatch()
@@ -17,7 +17,7 @@ function Header() {
         <button onClick={() => dispatch(changeView())} data-testid="change-view-button">
           {view ? <img src={tile} alt="tile" /> : <img src={list} alt="list" />}
         </button>
-        <button><img src={popup} alt="pop up"/></button>
+        <PopupHeader />
       </nav>
     </header>
   )

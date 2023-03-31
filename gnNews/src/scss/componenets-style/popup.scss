@@ -46,6 +46,22 @@
     }
 }
 
+.popup__header {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    line-height: 1.8rem;
+    h5, h6 {
+        font-family: $font-alt;
+        font-size: $font-head3;
+    }
+
+    p {
+        font-family: $font-cursive;
+        font-size: $font-subhead1;
+    }
+}
+
 .popup__container a{
     position: absolute;
     bottom: 1rem;
